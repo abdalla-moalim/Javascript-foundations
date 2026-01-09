@@ -62,6 +62,7 @@ console.log('10' / '2'); // 5 (both strings converted to numbers)
 // Examples: ==, ===, !=, !==, >, <, >=, <=
 // always use === and !== to avoid type coercion issues.
 
+// Examples:
 console.log(5 == '5'); // true (loose equality, type coercion)
 console.log(5 === '5'); // false (strict equality, no type coercion)
 console.log(10 != '10'); // false (loose inequality, type coercion)
@@ -70,11 +71,13 @@ console.log(7 > 3); // true
 console.log(4 < 2); // false
 console.log(6 >= 6); // true
 console.log(5 <= 4); // false
+
 // Logical Operators
 // Used to combine or manipulate boolean values (true/false).
-// Examples: && (AND), || (OR), ! (NOT)
-// order of precedence: ! > && > ||
-
+// Examples: && (AND) = both expressions must be true, || (OR) = one expression must be true, ! (NOT) = flips the boolean value
+// order of precedence: first brackets if any, then ! ,  && ,  ||
+// The six false values in JavaScript are: 0 , "" (empty string), NaN , null , undefined , and false . 
+// Any other value is truthy, i.e. resolves to true
 console.log(true && false); // false
 console.log(true || false); // true
 console.log(!true); // false
@@ -83,9 +86,9 @@ console.log(!true); // false
 let isAdult = true;
 let hasID = false;
 
-console.log(isAdult && hasID);  // false (both conditions must be true)
-console.log(isAdult || hasID);  // true (at least one condition is true)
-console.log(!hasID);            // true (negates false to true)
+console.log(isAdult && hasID);  // false (both expressions must be true)
+console.log(isAdult || hasID);  // true (at least one expression is true)
+console.log(!hasID);            // true (flips false to true)
 
 // Practice Exercises
 // 1. What will be the output and type of the variable x after the following operations?

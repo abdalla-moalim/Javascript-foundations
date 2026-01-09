@@ -119,9 +119,9 @@ console.log(typeof x); // number
 
 // Note: the increment (++) and decrement (--) operators always convert to numbers in JavaScript! 
 
-// Logical Operators = used to combine or manuipulate boolean values (true/false).
-// oprators: AND (&&) = Both must be true, OR (||) = at least one must be true, NOT (!) = negates the value.
-// What will be the output of the following expressions?
+/* Logical Operators = used to combine or manuipulate boolean values (true/false).
+oprators: AND (&&) = Both must be true, OR (||) = at least one must be true, NOT (!) = negates the value.
+What will be the output of the following expressions? */
 
 console.log(true && false); // false , both conditions are not true
 console.log(true || false); // true, at least one condition is true
@@ -140,7 +140,7 @@ console.log((2 + 2 === 4) && (3 * 3 === 9)); // true, both conditions are true
 console.log((7 >= 9) || (5 < 5)); // false, both conditions are false
 console.log((4 < 2) || (8 > 5)); // true, second condition is true
 console.log(!(false && true)); // true, negates false to true
-console.log((3 === 3) && !(4 < 1)); // true, both conditions are true
+console.log((3 !== 3) && !(4 < 1)); // false && !(false) = false && true = false
 
 
 const age = 20;
@@ -148,8 +148,8 @@ const hasID = true;
 
 console.log(age >= 18 && hasID); // true, both expressions are true
 console.log(age < 18 || !hasID); // !hasID = false, both expressions are false
-console.log(!(age >= 18 && !hasID)); // age>= 18 is true, !hasID = false, true && false = false, !(false) = true
-console.log((age >= 18 && hasID) || (age < 18 && !hasID)); // true && true  = true, false && false = false, true || false = true 
+console.log(!(age >= 18 && !hasID)); // age>= 18 is true, !(true) = false, true && false = false
+console.log((age >= 18 && hasID) || (age < 18 && !hasID)); // (true && true) || false && !(true) = true || false = true
 
 
 // solve the following complex logical expressions and print the results:
@@ -177,6 +177,6 @@ console.log((3 * 3 === 9) || !(1 + 1 === 3)); // true || !(false) = true || true
 console.log(10 === "10" || 5 === 5); // false || true = true 
 console.log(!(7 !== 7) && 3 <= 3); // !(false) && true = true && true = true 
 console.log(6 / 2 === 3 && !(4 * 2 < 8)); // true && !(false) = true && true = true  
-console.log((1 + 1 === 2) || (2 + 2 === 5) && (3 + 3 === 6)); // true || false && true  = false && true = false, true || false  = true
+console.log((1 + 1 === 2) || (2 + 2 === 5) && (3 + 3 === 6)); // true || (false && true) = true || false = true
 console.log(!(5 > 3) || (4 < 6) && ('2' === 2)); // !(true) || true && false = false || false = false  
 
