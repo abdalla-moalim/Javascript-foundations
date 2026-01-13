@@ -3,17 +3,16 @@
 if-else statement is used to execute a block of code if the same condition is false.
 Only one block of code executes at any given time, never both. */
 
-const { cacheSignal } = require("react");
 
-// const hasAccount = true;
-// const hasMembership = false;
-// const canAccess = hasAccount && hasMembership;
+const hasAccount = true;
+const hasMembership = false;
+const canAccess = hasAccount && hasMembership;
 
-// if (canAccess) {
-//   console.log("Access granted!");
-// } else {
-//   console.log("Access denied!"); // output: Access denied!
-// }
+if (canAccess) {
+  console.log("Access granted!");
+} else {
+  console.log("Access denied!"); // output: Access denied!
+}
 
 /* Exercise 1: Age check
 Create a variable age.
