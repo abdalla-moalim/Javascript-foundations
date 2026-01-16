@@ -27,82 +27,87 @@ function divide(x, y) {
 }
 console.log(divide(25, 5)); // 5
 
-
 function canLogin(isLoggedIn, hasAccount) {
-    return isLoggedIn && hasAccount;
+  return isLoggedIn && hasAccount;
 }
 console.log(canLogin(false, true)); // output: false
 
 // function calculateDiscount(total) {
-  // if total >= 100 → return 10
-  // else → return 0
+// if total >= 100 → return 10
+// else → return 0
 // }
 
 function calculateDiscount(total) {
-    if (total >= 100) {
-        return 10;
-    }
-    return 0;
+  if (total >= 100) {
+    return 10;
+  }
+  return 0;
 }
 console.log(calculateDiscount(550)); // output: 10
 
-function greet(name = 'Guest') {
-    return `Hello, my name is ${name}`;
+function greet(name = "Guest") {
+  return `Hello, my name is ${name}`;
 }
-console.log(greet('Abdalla')); // output: Hello, my name is Abdalla
-console.log(greet('Amir')); // output: Hello, my name is Amir
+console.log(greet("Abdalla")); // output: Hello, my name is Abdalla
+console.log(greet("Amir")); // output: Hello, my name is Amir
 
 const message = function (fName, lName) {
-    return `Hello, ${fName} ${lName}`;
-}
-console.log(message('Abdalla', 'Dahir')); // output : Hello Abdalla Dahir
+  return `Hello, ${fName} ${lName}`;
+};
+console.log(message("Abdalla", "Dahir")); // output : Hello Abdalla Dahir
 
-const birthdayMessage = function(userName, age) {
-    console.log(`Happy birthday to ${userName}!`);
-    console.log(`You are ${25} years old`);
-}
-birthdayMessage('Abdalla', 25); // output: Happy birthday to Abdalla   You are 25 years old
+const birthdayMessage = function (userName, age) {
+  console.log(`Happy birthday to ${userName}!`);
+  console.log(`You are ${25} years old`);
+};
+birthdayMessage("Abdalla", 25); // output: Happy birthday to Abdalla   You are 25 years old
 
 // function canVote(age) {
-  // return true or false
+// return true or false
 // }
 
 const canVote = function (age) {
-    return age >= 18
-}
+  return age >= 18;
+};
 console.log(canVote(17)); // false
 
 // function safeDivide(a, b) {
-  // if b === 0 → return "Error"
-  // else → return a / b
+// if b === 0 → return "Error"
+// else → return a / b
 // }
 
 const safeDivide = function (a, b) {
-    if(b === 0) {
-        return 'Error'
-    }
-    return a / b
-}
-console.log(safeDivide(10, 0)); // output: Error
-
-
+  if (b === 0) {
+    return "Error";
+  }
+  return a / b;
+};
+console.log(safeDivide(0, 6)); // output: Error
 
 // function isValidUsername(username) {
-  // must be at least 5 characters
+// must be at least 5 characters
 // }
 
-function isValidUsername (username) {
-    return username.length >= 5;
+function isValidUsername(username) {
+  return username.length >= 5;
 }
-console.log(isValidUsername('Sara')); // false
+console.log(isValidUsername("Sara")); // false
 
 
-// exercise: find if a number is even or odd. if even, return true, else false.
+// exercise: checking if name is valid
 
-function isEven (number) {
-    if(number % 2 === 0) {
-        return true;
-    }
-    return false; 
+function isValidName(name) {
+  if (name.length <= 2) {
+    return "Name is not valid";
+  } else {
+    return "Valid Name";
+  }
+
 }
-console.log(isEven(7)); // false
+console.log(isValidName("Ali"));
+
+
+
+
+
+
