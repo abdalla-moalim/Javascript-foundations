@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(63, 183, 234);
+    color: rgb(62, 62, 42);
+    font-size: 41px;
+    font-weight: 300;
+
+}
+h1{
+    font-weight: 700;
+}
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(246, 232, 232);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: large;
+    border: 2px solid #ee0909;
+    transition-duration: 0.4s;
+    margin: 4px;
+}
+
+.btn:hover {
+    background-color: rgb(231, 60, 60);
+    color: white;
+}
+
+
+#displayResults {
+    color: rgb(156, 1, 1);              
+    padding: 10px 15px;              
+    margin-top: 10px;         
+    font-weight: bold;       
+}
